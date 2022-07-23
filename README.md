@@ -45,8 +45,6 @@ use gazmendsahiti\CcPointe\CardPointe;
 
 ```php
 $cardPointe = new CardPointe($serviceUrl, $username, $password, $merchId);
-// or
-$cardPointe = new CardPointe::make($serviceUrl, $username, $password, $merchId);
 
 $response = $cardPointe->authorization([
     'amount' => 255,
