@@ -1,0 +1,29 @@
+{
+    "name": "gazmendsahiti/ccpointe",
+    "description": "CcPointe is a lightweight package/library to interact with CardConnect's API CardPointe in a simple/fluent way.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gazmend Sahiti",
+            "email": "gazmendsahiti@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "gazmendsahiti\\CcPointe\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "gazmendsahiti\\CcPointe\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}

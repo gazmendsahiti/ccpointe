@@ -1,0 +1,6 @@
+vendor
+.idea
+composer.lock
+.phpunit.result.cache
+index.php
+.DS_Store
