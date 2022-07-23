@@ -1,11 +1,11 @@
-# gazmendsahiti/CcPointe
+# gazmendsahiti/ccpointe
 
 CcPointe is a lightweight package/library  to interact with CardConnect's API (CardPointe) in a simple/fluent way.
 
 ## Installation via composer
 Requires PHP >= 8.1 to run
 ```shell
-composer require gazmendsahiti/CcPointe
+composer require gazmendsahiti/ccpointe
 ```
 
 
