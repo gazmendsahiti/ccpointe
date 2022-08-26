@@ -21,7 +21,7 @@ class CardPointe extends RequestManager implements CardConnectInterface
 
     public function inquireMerchant(): CardPointe
     {
-        return $this->request('GET', Endpoint::INQUIRE_MERCHANT->value);
+        return $this->request('GET', Endpoint::INQUIRE_MERCHANT->value . '/' . $this->merchantID);
     }
 
     public function authorization(array $parameters): CardPointe
@@ -29,7 +29,7 @@ class CardPointe extends RequestManager implements CardConnectInterface
         return $this->request('POST', Endpoint::AUTHORIZATION->value, $parameters);
     }
 
-    public function capture(array $parameters): CardPointe
+    public function capture($parameters): CardPointe
     {
         return $this->request('POST', Endpoint::CAPTURE->value, $parameters);
     }
@@ -104,7 +104,7 @@ class CardPointe extends RequestManager implements CardConnectInterface
 
     public function bin(string $token): CardPointe
     {
-        return $this->request('GET', Endpoint::BIN->value, ['token' => $token]);
+        return $this->request('GET', Endpoint::BIN->value . '/' . $this->merchantID . '/' . $token);
     }
 
 }
