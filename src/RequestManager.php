@@ -74,7 +74,7 @@ abstract class RequestManager
 
         $options['headers'] = [
             'Content-Type'  => 'application/json',
-            'User-Agent'    => $_SERVER['HTTP_USER_AGENT'],
+            'User-Agent'    => $_SERVER['HTTP_USER_AGENT'] ?? 'PHP CcPointe Agent',
             'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password),
         ];
         return $options;
